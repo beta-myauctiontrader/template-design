@@ -105,6 +105,32 @@
   width:48%;
   height:48%;
 }
+.preview-image-1,.preview-image-2,.preview-image-3,.preview-image-4{
+  padding:6px;
+  margin-left:12px;
+  margin-top:2px;
+}
+.footer{
+  width:100%;
+  border:1px dashed #000000;
+  height:360px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:22px;
+}
+.live-video{
+  width:370px;
+  height:278px;
+  margin-top:15px;
+  margin-left:15px;
+  border:1px solid #d3d3d3;
+  background-color:#d3d3d3;
+  padding:10px;
+}
+video{
+  height:100%;
+  width:100%;
+}
 </style>
 </head>
 <body>
@@ -325,10 +351,18 @@
 
       <div class="preview-auction">
         <div class="big-preview">
-          <div class="top-left"></div>
-          <div class="top-right"></div>
-          <div class="bottom-left"></div>
-          <div class="bottom-right"></div>
+          <div class="top-left">
+            <div class="preview-image-1"><img src="http://placehold.it/250x250"></div>
+          </div>
+          <div class="top-right">
+            <div class="preview-image-2"><img src="http://placehold.it/250x250"></div>
+          </div>
+          <div class="bottom-left">
+            <div class="preview-image-3"><img src="http://placehold.it/250x250"></div>
+          </div>
+          <div class="bottom-right">
+            <div class="preview-image-4"><img src="http://placehold.it/250x250"></div>
+          </div>
 
         </div><!--end big preview class-->
         <div class="side-scroll-preview"></div><!--end side scroll preview class-->
@@ -336,7 +370,13 @@
 
       </div><!--end preview auction class-->
     </div><!--end body class-->
-    <div class="footer"></div><!--end footer class-->
+    <div class="footer">
+      <span style="text-align:center;border:1px solid #000000;font-size:24px;margin-left:115px;margin-top:34px;position:absolute;">LIVE AUCTIONS</span>
+      <div class="live-video">
+        <video src="#" controls>
+        </video>
+      </div><!--live video div-->
+    </div><!--end footer class-->
   </div><!--end container class-->
 </body>
 </html>
