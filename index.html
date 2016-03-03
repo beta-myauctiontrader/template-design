@@ -132,15 +132,15 @@
 
             <div class="top-search-box" style="border:1px solid #d3d3d3;margin-left:10px;padding:6px;margin-top:8px;">
               <input type="radio" name="auctionType" value="Ending-Soon"> Auction Ending Soon<br>
-              <input type="radio" name="auctionType" value="Current-Auction" checked> Current Auction<br>
+              <input type="radio" name="auctionType" value="Current-Auction"> Current Auction<br>
               <input type="radio" name="auctionType" value="Past-Auction"> Past Auction<br>
-              <input type="radio" name="auctionType" value="Both"> Both<br>
+              <input type="radio" name="auctionType" value="all" checked> All<br>
           </div><!--end top search box div -->
 
           <div class="2nd-search-box" style="border:1px solid #d3d3d3;margin-left:10px;padding:6px;margin-top:8px;">
             <input type="radio" name="reserveType" value="noReserve"> No Reserve Auctions<br>
             <input type="radio" name="reserveType" value="Reserve"> Reserve Auctions<br>
-            <input type="radio" name="reserveType" value="Both" checked> Both<br>
+            <input type="radio" name="reserveType" value="all" checked> All<br>
         </div><!--end 2nd search box div -->
 
           <div class="year-select" style="padding:6px;margin-left:10px;border:1px solid #d3d3d3;margin-top:8px;">
@@ -232,40 +232,42 @@
                         <option value="Nissan">Nissan</option>
                         <option value="Nash">Nash</option>
                         <option value="Opel">Opel</option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                        <option value="Panoz">Panoz</option>
+                        <option value="Puegot">Puegot</option>
+                        <option value="Plymouth">Plymouth</option>
+                        <option value="Pontiac">Pontiac</option>
+                        <option value="Porsche">Porsche</option>
+                        <option value="Renault">Renault</option>
+                        <option value="Range-Rover">Range Rover</option>
+                        <option value="Rolls-Royce">Rolls-Royce</option>
+                        <option value="Saab">Saab</option>
+                        <option value="Scion">Scion</option>
+                        <option value="Shelby">Shelby</option>
+                        <option value="Smart">Smart</option>
+                        <option value="Subaru">Subaru</option>
+                        <option value="Suzuki">Suzuki</option>
+                        <option value="Tesla">Tesla</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="Volvo">Volvo</option>
                         <option value="any" selected>All Makes</option>
                     </select>
                   </div>
+
+                  <div class="engineSize" style="margin-top:9px;margin-left:10px;border:1px solid #d3d3d3;padding:6px;">
+                    Engine Size:
+                    <select name="cylinderSize" style="width:50%;">
+                              <option value="3">3 Cylinder</option>
+                              <option value="4">4 Cylinder</option>
+                              <option value="5">5 Cylinder</option>
+                              <option value="6">6 Cylinder</option>
+                              <option value="8">8 Cylinder</option>
+                              <option value="10">10 Cylinder</option>
+                              <option value="12">12 Cylinder</option>
+                              <option value="16">16 Cylinder</option>
+                              <option value="all" selected>Any Size</option>
+                  </select>
+                </div>
 
 
           <div class="new-or-used" style="margin-top:9px;margin-left:10px;border:1px solid #d3d3d3;padding:6px;">
@@ -273,36 +275,49 @@
             <br>
           <input type="checkbox" name="preowned" value="preowned"> Preowned
             <br>
+          <input type="checkbox" name="all" value="all" checked> All
+            <br>
           </div><!--new or used-->
+
+          <div class="vehicleType" style="margin-top:9px;margin-left:10px;border:1px solid #d3d3d3;padding:6px;">
+          <input type="checkbox" name="car" value="car"> Car
+            <br>
+          <input type="checkbox" name="truck" value="truck"> Truck
+            <br>
+          <input type="checkbox" name="other" value="other"> Other
+            <br>
+          <input type="checkbox" name="all" value="all" checked> All
+            <br>
+          </div><!--vehicleType-->
 
           <div class="fuelType" style="margin-top:9px;margin-left:10px;border:1px solid #d3d3d3;padding:6px;">
           <input type="checkbox" name="gas" value="gas"> Gas
             <br>
           <input type="checkbox" name="diesel" value="diesel"> Diesel
             <br>
+          <input type="checkbox" name="htbrid" value="hybrid"> Hybrid
+            <br>
+          <input type="checkbox" name="electric" value="electric"> Electric
+            <br>
+          <input type="checkbox" name="natural-gas" value="natural-gas"> Natural Gas
+            <br>
+          <input type="checkbox" name="all" value="all" checked> All
+            <br>
           </div><!--fuelType-->
 
           <div class="4x4-or2wd" style="margin-top:9px;margin-left:10px;border:1px solid #d3d3d3;padding:6px;">
-          <input type="checkbox" name="4x4" value="4x4"> 4x4
-            <br>
           <input type="checkbox" name="2wd" value="2wd"> 2wd
             <br>
-          </div><!--4x4 or 2wd-->
+          <input type="checkbox" name="4x4" value="4x4"> 4x4
+            <br>
+          <input type="checkbox" name="Awd" value="Awd"> Awd
+            <br>
+          <input type="checkbox" name="All" value="All" checked> All
+            <br>
 
-              <div class="engineSize" style="margin-top:9px;margin-left:10px;border:1px solid #d3d3d3;padding:6px;">
-                Engine Size:
-                <select name="cylinderSize" style="width:50%;">
-                          <option value="3">3 Cylinder</option>
-                          <option value="4">4 Cylinder</option>
-                          <option value="5">5 Cylinder</option>
-                          <option value="6">6 Cylinder</option>
-                          <option value="8">8 Cylinder</option>
-                          <option value="10">10 Cylinder</option>
-                          <option value="12">12 Cylinder</option>
-                          <option value="16">16 Cylinder</option>
-                          <option value="all" selected>Any Size</option>
-              </select>
-            </div>
+          </div><!--4x4 or 2wd or AWD or ALL-->
+
+          <button class="parameter-submit" style="padding:6px;background-color:#009BFF;width:92%;margin-left:10px;margin-top:8px;height:30px;font-size:15px;">Search our Auction Database</button>
 
         </form>
       </div><!--end search column-->
